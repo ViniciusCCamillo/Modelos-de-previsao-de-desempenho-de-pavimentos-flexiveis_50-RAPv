@@ -1,0 +1,43 @@
+
+--------------------------------------------------------------------------
+INICIO: 2025-06-08 12:26:12
+RANGE DE VALORES/LETRAS DOS DADOS DE ENTRADA:
+    Idade (Dados): ('0.08337402', '53.375')
+    PSI (-1 Ano): ('1.536883', '4.53')
+    IDS (-1 Ano): ('0.0', '200.0')
+    D0 (-1 Ano): ('5.801119', '198.6864')
+    IRI-convertido (-1 Ano): ('0.0', '5.784615384615384')
+    H1ORIGCM (ESTR): ('2.0', '45.0')
+    H2CM (ESTR): ('4.0', '74.5')
+    NAASHTO acumulado: ('0.0', '13509116.236549601')
+    RESUMO_REFOR.: ('0.0', '16.0')
+    RESUMO_PERCTARE: ('0.0', '200.0')
+    RESUMO (-1 Ano)_REFOR.: ('0.0', '16.0')
+    RESUMO (-1 Ano)_PERCTARE: ('0.0', '300.0')
+    VAR. ALVO --> IRI Filtrado (Dados): ('0.5846153846153845', '5.892307692307691')
+
+ANALISE DE DADOS BRUTOS:
+Colunas com potencial multicolinearidade: ['Idade (Dados)', 'PSI (-1 Ano)', 'IDS (-1 Ano)', 'D0 (-1 Ano)', 'IRI-convertido (-1 Ano)', 'H1ORIGCM (ESTR)', 'H2CM (ESTR)', 'NAASHTO acumulado', 'RESUMO_REFOR.', 'RESUMO_PERCTARE', 'RESUMO (-1 Ano)_REFOR.', 'RESUMO (-1 Ano)_PERCTARE']
+
+NOMENCLATURA E ORDEM DAS ENTRADA: ['Idade (Dados)', 'PSI (-1 Ano)', 'IDS (-1 Ano)', 'D0 (-1 Ano)', 'IRI-convertido (-1 Ano)', 'H1ORIGCM (ESTR)', 'H2CM (ESTR)', 'NAASHTO acumulado', 'RESUMO_REFOR.', 'RESUMO_PERCTARE', 'RESUMO (-1 Ano)_REFOR.', 'RESUMO (-1 Ano)_PERCTARE']
+Linhas X Colunas (Pre oversampling): (5558, 12)
+Linhas X Colunas (Pos oversampling): (9395, 12)
+Linhas X Colunas (Com PCA + Split): (9395, 12)
+Fim normalizacao/Inicio do treinamento: 2025-06-08 12:26:12
+Best Params: [2.82986295e-03 3.96913967e-02 4.52780061e-02 1.65799137e-03
+ 1.42344787e+01 5.49170531e+01 3.91180079e+02]
+
+Training set metrics:
+  - Mean Squared Error: 0.497
+  - Mean Squared Error COV: 32.699
+  - Reability: 67.301
+Model set metrics:
+  - R^2 Score: 0.703
+  - Mean Absolute Error: 0.283
+  - Mean Squared Error: 0.173
+  - Root Mean Squared Error: 0.416
+  - Desv. Pad.: 1.001
+
+FIM: 2025-06-08 15:15:41
+TEMPO DE DURACAO: 2:49:29.466621
+
