@@ -74,36 +74,36 @@ print("Previsão:", y_pred)
 > ⚠️ Certifique-se de que os dados de entrada estejam no mesmo formato usado no treinamento descrito nos arquivos TXT na linha "NOMENCLATURA E ORDEM DAS ENTRADA:".
 
 ## 📈 Modelo IRI — Variáveis de Entrada
-| Variável                      | Descrição                                                            |
-| ----------------------------- | -------------------------------------------------------------------- |
-| **Idade (Dados)**             | Tempo em anos desde a construção ou última intervenção do pavimento. |
-| **PSI (-1 Ano)**              | Índice de Serviçabilidade Presente (do ano anterior).                |
-| **IDS (-1 Ano)**              | Índice de Dano Superficial (do ano anterior).                        |
-| **D0 (-1 Ano)**               | Deflexão central medida com FWD (do ano anterior).                   |
-| **IRI-convertido (-1 Ano)**   | Índice Internacional de Irregularidade            (do ano anterior). |
-| **H1ORIGCM (ESTR)**           | Espessura da camada de revestimento (em cm).                         |
-| **H2CM (ESTR)**               | Espessura da camada de base (em cm).                                 |
-| **NAASHTO acumulado**         | Tráfego acumulado em termos de repetições equivalentes AASHTO.       |
-| **RESUMO\_REFOR.**            | cm de reforço ou micro-asfalto feito antes do monitoramento.         |
-| **RESUMO\_PERCTARE**          | Percentual da área do trecho com defeitos no ano atual.              |
-| **RESUMO (-1 Ano)\_REFOR.**   | Reforço estrutural aplicado no ano anterior.                         |
-| **RESUMO (-1 Ano)\_PERCTARE** | Percentual de área danificada no trecho no ano anterior.             |
+| Variável                      | Descrição                                                                                                             |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Idade (Dados)**             | Tempo em anos desde a construção ou último reforço do pavimento. Não considera micro.                                 |
+| **PSI (-1 Ano)**              | Índice de Serviçabilidade Presente (do ano anterior).                                                                 |
+| **IDS (-1 Ano)**              | Índice de Defeitos Superficial (do ano anterior). Pode ser substituído pelo IGG.                                      |
+| **D0 (-1 Ano)**               | Deflexão máxima medida com FWD (do ano anterior).                                                                     |
+| **IRI-convertido (-1 Ano)**   | Índice de Irregularidade Internacional (do ano anterior). Convertido por que veio do QI, mas pode ser o IRI original. |
+| **H1ORIGCM (ESTR)**           | Espessura da camada de revestimento (em cm) somando os reforços.                                                      |
+| **H2CM (ESTR)**               | Espessura da camada de base (em cm).                                                                                  |
+| **NAASHTO acumulado**         | Tráfego acumulado no método AASHTO. Considerar apenas apartir do início do monitoramento e não da vida da rodovia.    |
+| **RESUMO\_REFOR.**            | Cm de reforço ou micro-asfalto feito antes do monitoramento.                                                          |
+| **RESUMO\_PERCTARE**          | Percentual da área que recebeu obras antes do monitoramento.                                                          |
+| **RESUMO (-1 Ano)\_REFOR.**   | Cm de reforço ou micro-asfalto feito no ano anterior.                                                                 |
+| **RESUMO (-1 Ano)\_PERCTARE** | Percentual da área que recebeu obras no ano anterior.                                                                 |
 
 ## 📈 Modelo ATRMED — Variáveis de Entrada
-| Variável                      | Descrição                                                            |
-| ----------------------------- | -------------------------------------------------------------------- |
-| **Idade (Dados)**             | Tempo em anos desde a construção ou última intervenção do pavimento. |
-| **PSI (-1 Ano)**              | Índice de Serviçabilidade Presente (do ano anterior).                |
-| **D0 (-1 Ano)**               | Deflexão central medida com equipamento (do ano anterior).           |
-| **IRI-convertido (-1 Ano)**   | Índice Internacional de Irregularidade convertido (do ano anterior). |
-| **ATRMED (-1 Ano)**           | Deformação plástica média acumulada (do ano anterior).               |
-| **H1ORIGCM (ESTR)**           | Espessura da camada de revestimento (em cm).                         |
-| **H2CM (ESTR)**               | Espessura da camada de base (em cm).                                 |
-| **NAASHTO acumulado**         | Tráfego acumulado em repetições equivalentes AASHTO.                 |
-| **RESUMO\_REFOR.**            | Reforço aplicado no ano atual.                                       |
-| **RESUMO\_PERCTARE**          | Percentual de área danificada no ano atual.                          |
-| **RESUMO (-1 Ano)\_REFOR.**   | Reforço aplicado no ano anterior.                                    |
-| **RESUMO (-1 Ano)\_PERCTARE** | Percentual de dano superficial no ano anterior.                      |
+| Variável                      | Descrição                                                                                                             |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Idade (Dados)**             | Tempo em anos desde a construção ou último reforço do pavimento. Não considera micro.                                 |
+| **PSI (-1 Ano)**              | Índice de Serviçabilidade Presente (do ano anterior).                                                                 |
+| **D0 (-1 Ano)**               | Deflexão central medida com equipamento (do ano anterior).                                                            |
+| **IRI-convertido (-1 Ano)**   | Índice de Irregularidade Internacional (do ano anterior). Convertido por que veio do QI, mas pode ser o IRI original. |
+| **ATRMED (-1 Ano)**           | Deformação plástica média acumulada (do ano anterior).                                                                |
+| **H1ORIGCM (ESTR)**           | Espessura da camada de revestimento (em cm).                                                                          |
+| **H2CM (ESTR)**               | Espessura da camada de base (em cm).                                                                                  |
+| **NAASHTO acumulado**         | Tráfego acumulado no método AASHTO. Considerar apenas apartir do início do monitoramento e não da vida da rodovia.    |
+| **RESUMO\_REFOR.**            | Cm de reforço ou micro-asfalto feito antes do monitoramento.                                                          |
+| **RESUMO\_PERCTARE**          | Percentual da área que recebeu obras antes do monitoramento.                                                          |
+| **RESUMO (-1 Ano)\_REFOR.**   | Cm de reforço ou micro-asfalto feito no ano anterior.                                                                 |
+| **RESUMO (-1 Ano)\_PERCTARE** | Percentual da área que recebeu obras no ano anterior.                                                                 |
 
 ## 📌 Requisitos
 - Python 3.8+
