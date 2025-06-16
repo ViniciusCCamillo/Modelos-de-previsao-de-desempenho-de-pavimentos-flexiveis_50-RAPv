@@ -73,7 +73,7 @@ print("Previsão:", y_pred)
 > [!CAUTION]
 > ⚠️ Certifique-se de que os dados de entrada estejam no mesmo formato usado no treinamento descrito nos arquivos TXT na linha "NOMENCLATURA E ORDEM DAS ENTRADA:".
 
-## 📈 Modelo IRI — Variáveis de Entrada
+## 📈 Modelo IRI — Ordem de disposição das colunas e descrição das variáveis de entrada
 | Variável                      | Descrição                                                                                                             |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | **Idade (Dados)**             | Tempo em anos desde a construção ou último reforço do pavimento. Não considera micro.                                 |
@@ -89,7 +89,7 @@ print("Previsão:", y_pred)
 | **RESUMO (-1 Ano)\_REFOR.**   | Cm de reforço ou micro-asfalto feito no ano anterior.                                                                 |
 | **RESUMO (-1 Ano)\_PERCTARE** | Percentual da área que recebeu obras no ano anterior.                                                                 |
 
-## 📈 Modelo ATRMED — Variáveis de Entrada
+## 📈 Modelo ATRMED — Ordem de disposição das colunas e descrição das variáveis de entrada
 | Variável                      | Descrição                                                                                                             |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | **Idade (Dados)**             | Tempo em anos desde a construção ou último reforço do pavimento. Não considera micro.                                 |
