@@ -26,7 +26,7 @@ import pickle
 import numpy as np
 
 # Carregar scaler e modelo
-with open("scaler_x.pkl", "rb") as f:
+with open("DNN+20-IRI Filtrado (Dados)-Training_metrics-scaler_x.pkl", "rb") as f:
     scaler = pickle.load(f)
 
 with open("DNN+20-IRI Filtrado (Dados)-Model.pkl", "rb") as f:
@@ -50,10 +50,10 @@ import pickle
 import numpy as np
 
 # Carregar scaler, PCA e modelo treinado
-with open("scaler_x.pkl", "rb") as f:
+with open("DNN+PCA+0-ATRMED Filtrado-Training_metrics-scaler_x.pkl", "rb") as f:
     scaler = pickle.load(f)
 
-with open("pca_model.pkl", "rb") as f:
+with open("DNN+PCA+0-ATRMED Filtrado-Training_metrics-pca_model.pkl", "rb") as f:
     pca = pickle.load(f)
 
 with open("DNN+PCA+0-ATRMED Filtrado-Model.pkl", "rb") as f:
